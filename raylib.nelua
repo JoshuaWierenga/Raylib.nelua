@@ -871,6 +871,7 @@ function rl.unloadShader(shader: rl.shader): void <cimport'UnloadShader', cinclu
 -- Screen-space-related functions
 function rl.getScreenToWorldRay(position: rl.vector2, camera: rl.camera): rl.ray <cimport'GetScreenToWorldRay', cinclude'<raylib.h>',nodecl> end
 function rl.getScreenToWorldRayEx(position: rl.vector2, camera: rl.camera, width: cint, height: cint): rl.ray <cimport'GetScreenToWorldRayEx', cinclude'<raylib.h>',nodecl> end
+function rl.getScreenToWorld2D(position: rl.vector2, camera: rl.camera2D): rl.vector2 <cimport'GetScreenToWorld2D', cinclude'<raylib.h>',nodecl> end
 function rl.getWorldToScreen(position: rl.vector3, camera: rl.camera): rl.vector2 <cimport'GetWorldToScreen', cinclude'<raylib.h>',nodecl> end
 function rl.getWorldToScreenEx(position: rl.vector3, camera: rl.camera, width: cint, height: cint): rl.vector2 <cimport'GetWorldToScreenEx', cinclude'<raylib.h>',nodecl> end
 function rl.getWorldToScreen2D(position: rl.vector2, camera: rl.camera2D): rl.vector2 <cimport'GetWorldToScreen2D', cinclude'<raylib.h>',nodecl> end
